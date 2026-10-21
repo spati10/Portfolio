@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sourav Pati – AI/ML Engineer</title>
+<meta name="description" content="Sourav Pati, AI/ML engineer from Kolkata. Offline voice agents, computer vision, and LLM systems with PyTorch, ONNX Runtime, and FastAPI.">
+<meta name="theme-color" content="#10141f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sourav Pati – AI/ML Engineer">
+<meta property="og:description" content="Offline voice agents, computer vision, and LLM systems. See projects, experience, and skills.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🧠%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,700&display=swap">
+<style>
+:root{--bg:#f6f6f3;--ink:#14213d;--muted:#59627a;--line:#d8dbe2;--accent:#2a56e8;--chip:#e8ebf5;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10141f;--ink:#e9ecf5;--muted:#9aa3b8;--line:#272e42;--accent:#7b9bff;--chip:#1b2236;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#10141f;--ink:#e9ecf5;--muted:#9aa3b8;--line:#272e42;--accent:#7b9bff;--chip:#1b2236;color-scheme:dark}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 60px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;overflow-x:clip;background:var(--bg);color:var(--ink);font:400 17px/1.7 Literata,Georgia,serif}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+h1,h2,h3{font-family:Literata,Georgia,serif;letter-spacing:-.01em;line-height:1.15;margin:0}
+canvas.bg{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+#nn{opacity:1}
+@media (max-width:820px){#nn{opacity:.7}}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 85%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top nav{max-width:1240px;margin:0 auto;padding:0 20px;display:flex;gap:4px;overflow-x:auto}
+.top a{color:var(--muted);text-decoration:none;padding:14px 12px;border-bottom:3px solid transparent;white-space:nowrap;font-weight:500}
+.top a:hover{color:var(--ink)}
+.top a[aria-current="true"]{color:var(--ink);border-bottom-color:var(--sec,var(--accent))}
+.wrap{position:relative;z-index:1;max-width:1240px;margin:0 auto;padding:0 28px;display:grid;grid-template-columns:300px 1fr;gap:80px}
+aside{position:sticky;top:52px;align-self:start;padding:56px 0}
+aside h1{font-size:2.6rem;font-weight:700;letter-spacing:-.02em}
+.role{color:var(--muted);margin:12px 0 24px}
+.links{margin-top:24px;display:flex;gap:16px;flex-wrap:wrap}
+.avail{display:inline-flex;gap:8px;align-items:center;margin-top:28px;font-size:.9rem;color:var(--muted)}
+.avail i{width:9px;height:9px;border-radius:50%;background:#2ea66b;animation:pulse 2s 3}
+@keyframes pulse{50%{opacity:.3}}
+@media (prefers-reduced-motion:reduce){.avail i{animation:none}html{scroll-behavior:auto}}
+main{position:relative;perspective:1800px;min-height:80vh;padding:72px 0 96px}
+section{display:none;margin-bottom:72px}
+section.on{display:block}
+.leaf{position:absolute;margin:0;pointer-events:none}
+.seam{position:absolute;width:3px;border-radius:2px;background:var(--sec,var(--accent));box-shadow:0 0 16px 5px var(--sec,var(--accent));pointer-events:none;z-index:3}
+h2{font-size:1.9rem;font-weight:700;margin-bottom:24px}
+.lead{font-size:1.35rem;line-height:1.5;max-width:40em}
+#about .lead{font-size:clamp(1.9rem,3.6vw,2.9rem);line-height:1.18;letter-spacing:-.02em;max-width:17em;margin-bottom:28px}
+.proj{border-top:1px solid var(--line)}
+.proj:last-child{border-bottom:1px solid var(--line)}
+.proj summary{display:flex;justify-content:space-between;align-items:baseline;gap:24px;cursor:pointer;list-style:none;padding:26px 0}
+.proj summary::-webkit-details-marker{display:none}
+.proj summary:hover h3{color:var(--sec,var(--accent))}
+.proj summary:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.proj h3{font-size:1.4rem;font-weight:500}
+.metric{font:700 2.6rem/1 Literata,Georgia,serif;color:var(--sec,var(--accent));text-align:right}
+.metric small{display:block;margin-top:6px;font-size:.8rem;font-weight:400;color:var(--muted)}
+.proj .body{padding-bottom:26px}
+.proj .result{font-weight:500;margin:8px 0}
+.proj p{margin:8px 0;color:var(--muted);max-width:46em}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0;padding:0;list-style:none}
+.tags li{background:var(--chip);border-radius:6px;padding:2px 10px;font-size:.88rem}
+.job{display:grid;grid-template-columns:130px 1fr;gap:16px;padding:16px 0}
+.job time{color:var(--muted);font-size:.95rem}
+.job h3{font-size:1.1rem;font-weight:500}
+.job p{margin:4px 0 0;color:var(--muted)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:0}
+.skills>div{border:1px solid var(--line);border-radius:10px;padding:16px 18px;background:color-mix(in srgb,var(--bg) 80%,transparent)}
+.skills dt{font-weight:700;color:var(--sec,var(--accent))}
+.skills dd{margin:6px 0 0;color:var(--muted);font-size:.95rem;line-height:1.55}
+.cta{display:inline-block;background:var(--accent);color:var(--bg);padding:12px 22px;border-radius:8px;text-decoration:none;font-weight:500}
+.folio{display:flex;justify-content:space-between;gap:16px;margin-top:56px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:.95rem}
+.folio a{color:var(--ink);text-decoration:none}
+.folio a:hover{color:var(--sec,var(--accent))}
+@media (max-width:820px){.wrap{display:block}aside{position:static;padding:24px 0 0}main{padding-top:40px}.job{grid-template-columns:1fr;gap:2px}}
+</style>
+</head>
+<body>
+<canvas class="bg" id="field" aria-hidden="true"></canvas>
+<canvas class="bg" id="nn" aria-hidden="true"></canvas>
+<header class="top"><nav aria-label="Sections"><a href="#about">About</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></nav></header>
+<div class="wrap">
+<aside>
+  <h1>Sourav Pati</h1>
+  <p class="role">AI/ML engineer. I build speech, vision and language systems that run on your own machine.</p>
+  <div class="links">
+    <a href="https://github.com/spati10">GitHub</a>
+    <a href="https://www.linkedin.com/in/patisourav/">LinkedIn</a>
+    <a href="#contact">Email</a>
+  </div>
+  <div class="avail"><i></i>Open to AI/ML roles</div>
+</aside>
+<main>
+  <section id="about">
+    <h2>About</h2>
+    <p class="lead">I build AI systems that listen, see, and understand language.</p>
+    <p>I’m a Computer Science graduate specializing in AI/ML, with hands-on experience in deep learning, computer vision, speech processing, and natural language processing. I work mostly in Python, PyTorch, OpenCV, and ONNX Runtime, and I like taking a model all the way to a working application.</p>
+    <p style="color:var(--muted)">Based in Kolkata, India. Currently an AI/ML intern, looking for roles where I can build and ship intelligent applications.</p>
+  </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <details class="proj" open><summary><h3>ThoughtField</h3><span class="metric">Multi-agent<small>social simulation</small></span></summary><div class="body"><p class="result">An AI-powered social simulation platform where autonomous agents interact with each other.</p><p>Based on the Stanford Generative Agents architecture, it lets agents remember, retrieve and act, and supports prediction-driven simulations.</p><p>The FastAPI backend uses the OpenAI API, Redis and ChromaDB for agent memory and semantic retrieval, and WebSockets to stream live agent interactions.</p><ul class="tags"><li>Python</li><li>FastAPI</li><li>Next.js</li><li>OpenAI API</li><li>Redis</li><li>ChromaDB</li></ul><p><a href="https://github.com/spati10">See the code on GitHub</a></p></div></details>
+    <details class="proj"><summary><h3>Multilingual Voice AI Agent (Offline)</h3><span class="metric">0.8 s<small>response, dataset-matched</small></span></summary><div class="body"><p class="result">A speech-to-speech assistant that runs locally in Bengali, Hindi and English.</p><p>It combines multilingual speech recognition, language identification and neural speech synthesis, with a three-tier answer pipeline: lexical matching, semantic retrieval with ChromaDB, and local LLM inference. Unanswered queries escalate to customer care.</p><p>Runs on CPU with ONNX Runtime and was tested fully offline: about 0.8 seconds for dataset-matched queries, 2–3 seconds for generated answers, around 9 GB of RAM.</p><ul class="tags"><li>Python</li><li>ONNX Runtime</li><li>FastAPI</li><li>ChromaDB</li><li>ASR</li><li>TTS</li><li>RAG</li></ul><p><a href="https://github.com/spati10">See the code on GitHub</a></p></div></details>
+    <details class="proj"><summary><h3>Brain Tumor Detection</h3><span class="metric">99.3%<small>classification accuracy</small></span></summary><div class="body"><p class="result">A web application that classifies brain MRI scans as glioma, meningioma or pituitary tumor.</p><p>Built on a fine-tuned ResNet50 with transfer learning, using data augmentation and model evaluation. Accuracy is approximately 99.3% on the Figshare Brain Tumor MRI dataset.</p><ul class="tags"><li>Python</li><li>PyTorch</li><li>ResNet50</li><li>OpenCV</li><li>Flask</li></ul><p><a href="https://github.com/spati10">See the code on GitHub</a></p></div></details>
+  </section>
+  <section id="experience">
+    <h2>Experience and education</h2>
+    <div class="job"><time>Aug 2026 – Present</time><div><h3>AI/ML Intern, Beas Consultancy and Services Private Limited</h3><p>Building an offline multilingual voice AI agent that chains speech recognition, language identification, speech-to-text, local LLM inference and text-to-speech, and cut its memory use by quantizing the LLM to 4-bit ONNX. Also worked on a vehicle number plate recognition pipeline: detecting trucks, cropping the plate region and reading the text with OCR.</p></div></div>
+    <div class="job"><time>B.Tech</time><div><h3>Computer Science and Engineering (AI/ML), University of Engineering and Management</h3><p>Specialization in Artificial Intelligence and Machine Learning.</p></div></div>
+    <div class="job"><time>2025</time><div><h3>Oracle Cloud Infrastructure Certified AI Foundations Associate</h3><p>Oracle.</p></div></div>
+    <div class="job"><time>2025</time><div><h3>Oracle Cloud Infrastructure Certified Generative AI Professional</h3><p>Oracle.</p></div></div>
+  </section>
+  <section id="skills">
+    <h2>Skills</h2>
+    <dl class="skills">
+      <div><dt>Languages</dt><dd>Python, SQL</dd></div>
+      <div><dt>Deep Learning &amp; Computer Vision</dt><dd>PyTorch, ResNet50, Transfer Learning, Data Augmentation, OpenCV, Image Classification, OCR</dd></div>
+      <div><dt>Speech AI</dt><dd>Automatic Speech Recognition, Text-to-Speech, Voice Activity Detection, Language Identification</dd></div>
+      <div><dt>LLMs &amp; NLP</dt><dd>OpenAI API, Gemma, Retrieval-Augmented Generation, Semantic Search, 4-bit Quantization</dd></div>
+      <div><dt>Vector Databases &amp; Data</dt><dd>ChromaDB, Redis, Scikit-learn, Data Preprocessing, Model Evaluation</dd></div>
+      <div><dt>Model Deployment</dt><dd>ONNX Runtime, CPU Inference, Inference Pipelines</dd></div>
+      <div><dt>Backend &amp; APIs</dt><dd>FastAPI, Flask, REST APIs, WebSockets</dd></div>
+      <div><dt>Tools</dt><dd>Git, GitHub, Next.js</dd></div>
+      </dl>
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p class="lead">Hiring for AI/ML, or want to talk about a project? Email me.</p>
+    <p><a class="cta" href="mailto:patisourav2022@gmail.com">patisourav2022@gmail.com</a></p>
+    <p style="color:var(--muted)"><a href="https://github.com/spati10">github.com/spati10</a> · <a href="https://www.linkedin.com/in/patisourav/">linkedin.com/in/patisourav</a></p>
+  </section>
+  <footer class="folio"><a id="prev" href="#about"></a><span id="pg"></span><a id="next" href="#about"></a></footer>
+</main>
+</div>
+<script>
+(function(){
+var c=document.getElementById('field'),x=c.getContext('2d'),dots=[],w,h,raf,mouse={x:-999,y:-999},LINK=130,CURSOR=170,
+reduce=matchMedia('(prefers-reduced-motion: reduce)').matches,
+IDS=['about','projects','experience','skills','contact'],
+P={about:[[42,86,232],[123,155,255]],projects:[[139,63,240],[190,140,255]],experience:[[14,159,142],[70,215,195]],skills:[[224,112,26],[255,170,90]],contact:[[224,52,95],[255,120,155]]},
+ti=matchMedia('(prefers-color-scheme: dark)').matches?1:0,cur=P.about[ti].slice(),tgt=cur.slice(),active=null,links=document.querySelectorAll('.top a');
+function rgb(){for(var i=0;i<3;i++)cur[i]+=(tgt[i]-cur[i])*.06;return [Math.round(cur[0]),Math.round(cur[1]),Math.round(cur[2])];}
+function setSection(id){tgt=P[id][ti].slice();
+var i=IDS.indexOf(id),pv=document.getElementById('prev'),nx=document.getElementById('next');
+pv.style.visibility=i?'visible':'hidden';nx.style.visibility=i<4?'visible':'hidden';
+if(i){pv.textContent='Back to '+links[i-1].textContent;pv.href='#'+IDS[i-1];}
+if(i<4){nx.textContent='Next: '+links[i+1].textContent;nx.href='#'+IDS[i+1];}
+document.getElementById('pg').textContent='Page '+(i+1)+' of 5';
+document.documentElement.style.setProperty('--sec','rgb('+tgt.join(',')+')');
+links.forEach(function(a){a.setAttribute('aria-current',a.getAttribute('href')==='#'+id?'true':'false');});
+if(reduce){cur=tgt.slice();draw(false);}}
+function kick(d){window.dispatchEvent(new CustomEvent('surge',{detail:d}));dots.forEach(function(a){a.b=d*(40+Math.random()*25);a.hx=a.x;a.hm=true;});}
+function goTo(id){
+if(id===active)return;
+scrollTo({top:0,behavior:'instant'});
+var old=active&&document.getElementById(active),nw=document.getElementById(id),
+dir=old?(IDS.indexOf(id)>IDS.indexOf(active)?1:-1):0,
+fx=old&&!reduce,leaf,seam,W,f=dir>0,o={duration:1100,easing:'cubic-bezier(.65,0,.35,1)'};
+if(fx){W=old.offsetWidth;leaf=old.cloneNode(true);leaf.removeAttribute('id');leaf.classList.add('leaf');
+leaf.style.cssText='top:'+old.offsetTop+'px;left:'+old.offsetLeft+'px;width:'+W+'px';
+seam=document.createElement('i');seam.className='seam';
+seam.style.cssText='top:'+(old.offsetTop-20)+'px;left:'+old.offsetLeft+'px;height:'+(Math.max(old.offsetHeight,480)+40)+'px';
+old.parentNode.appendChild(leaf);old.parentNode.appendChild(seam);}
+if(old)old.classList.remove('on');nw.classList.add('on');active=id;
+if(fx){
+leaf.animate([{clipPath:'inset(0 0 0 0)'},{clipPath:f?'inset(0 0 0 100%)':'inset(0 100% 0 0)'}],o).onfinish=function(){leaf.remove();seam.remove();};
+nw.animate([{clipPath:f?'inset(0 100% 0 0)':'inset(0 0 0 100%)'},{clipPath:'inset(0 0 0 0)'}],o);
+seam.animate([{transform:'translateX('+(f?0:W)+'px)',opacity:0},{opacity:1,offset:.15},{opacity:1,offset:.85},{transform:'translateX('+(f?W:0)+'px)',opacity:0}],o);
+kick(dir);}
+setSection(id);
+try{history.replaceState(null,'','#'+id);}catch(e){}}
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="#"]');
+if(a&&IDS.indexOf(a.getAttribute('href').slice(1))>-1){e.preventDefault();goTo(a.getAttribute('href').slice(1));}});
+function size(){var d=Math.min(window.devicePixelRatio||1,2);w=innerWidth;h=innerHeight;c.width=w*d;c.height=h*d;x.setTransform(d,0,0,d,0,0);
+var n=0;
+while(dots.length<n)dots.push({x:Math.random()*w,y:Math.random()*h,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35,r:1.5+Math.random()*1.5});
+dots.length=n;if(reduce)draw(false);}
+function draw(move){
+x.clearRect(0,0,w,h);var k=rgb(),col='rgba('+k[0]+','+k[1]+','+k[2]+',',i,j,a,b,d;
+for(i=0;i<dots.length;i++){a=dots[i];
+if(move){a.b=(a.b||0)*.9;a.x+=a.vx+a.b;a.y+=a.vy;if(a.hm){if(Math.abs(a.b)<2)a.x+=(a.hx-a.x)*.12;if(Math.abs(a.b)<.5&&Math.abs(a.hx-a.x)<2)a.hm=false;}if(a.x<0){a.x=0;a.vx=Math.abs(a.vx);a.b=0;}else if(a.x>w){a.x=w;a.vx=-Math.abs(a.vx);a.b=0;}if(a.y<0||a.y>h)a.vy*=-1;}
+for(j=i+1;j<dots.length;j++){b=dots[j];d=Math.hypot(a.x-b.x,a.y-b.y);
+if(d<LINK){x.strokeStyle=col+((1-d/LINK)*.22)+')';x.lineWidth=1;x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.stroke();}}
+d=Math.hypot(a.x-mouse.x,a.y-mouse.y);
+if(d<CURSOR){x.strokeStyle=col+((1-d/CURSOR)*.55)+')';x.beginPath();x.moveTo(a.x,a.y);x.lineTo(mouse.x,mouse.y);x.stroke();}}
+for(i=0;i<dots.length;i++){a=dots[i];
+var g=x.createRadialGradient(a.x,a.y,0,a.x,a.y,a.r*7);
+g.addColorStop(0,col+'.55)');g.addColorStop(1,col+'0)');
+x.fillStyle=g;x.beginPath();x.arc(a.x,a.y,a.r*7,0,6.2832);x.fill();
+x.fillStyle=col+'1)';x.beginPath();x.arc(a.x,a.y,a.r,0,6.2832);x.fill();}
+}
+function loop(){draw(true);raf=requestAnimationFrame(loop);}
+addEventListener('resize',size);
+addEventListener('pointermove',function(e){mouse.x=e.clientX;mouse.y=e.clientY;});
+document.addEventListener('pointerleave',function(){mouse.x=mouse.y=-999;});
+size();var h0=location.hash.slice(1);goTo(IDS.indexOf(h0)>-1?h0:'about');
+if(!reduce){loop();document.addEventListener('visibilitychange',function(){cancelAnimationFrame(raf);if(!document.hidden)loop();});}
+})();
+(function(){
+var c=document.getElementById('nn'),x=c.getContext('2d'),w,h,L=[5,7,7,4],nodes=[],edges=[],pulses=[],t=0,mode='forward pass',
+NAMES=['input','hidden','hidden','output'],col=[42,86,232],tc=[42,86,232],
+reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function size(){var d=Math.min(window.devicePixelRatio||1,2);w=innerWidth;h=innerHeight;c.width=w*d;c.height=h*d;x.setTransform(d,0,0,d,0,0);
+var x0=w>820?w*.42:w*.08,x1=w*.94,y0=h*.16,y1=h*.8;
+nodes=L.map(function(n,l){var a=[];for(var i=0;i<n;i++)a.push({x:x0+(x1-x0)*l/(L.length-1),y:y0+(y1-y0)*i/(n-1),a:reduce&&(i+l)%3===0?.8:0});return a;});
+edges=[];for(var l=0;l<L.length-1;l++)nodes[l].forEach(function(a){nodes[l+1].forEach(function(b){edges.push({a:a,b:b,l:l});});});
+pulses=[];if(reduce)draw();}
+function fire(back){mode=back?'backpropagation':'forward pass';
+(back?nodes[L.length-1]:nodes[0]).forEach(function(n){n.a=1;});
+edges.forEach(function(e){pulses.push({e:e,s:-(back?L.length-2-e.l:e.l)*.9,back:back});});}
+function draw(){
+var m=(document.documentElement.style.getPropertyValue('--sec')||'').match(/\d+/g),i,rgb;
+if(m)tc=[+m[0],+m[1],+m[2]];for(i=0;i<3;i++)col[i]+=(tc[i]-col[i])*.06;
+rgb=Math.round(col[0])+','+Math.round(col[1])+','+Math.round(col[2]);
+x.clearRect(0,0,w,h);x.lineWidth=1.3;x.strokeStyle='rgba('+rgb+',.17)';x.beginPath();
+edges.forEach(function(e){x.moveTo(e.a.x,e.a.y);x.lineTo(e.b.x,e.b.y);});x.stroke();
+pulses.forEach(function(p){if(p.s<0||p.s>1)return;var f=p.back?1-p.s:p.s;
+x.fillStyle='rgba('+rgb+','+(p.back?.5:.9)+')';x.beginPath();x.arc(p.e.a.x+(p.e.b.x-p.e.a.x)*f,p.e.a.y+(p.e.b.y-p.e.a.y)*f,3,0,6.2832);x.fill();});
+nodes.forEach(function(layer){layer.forEach(function(n){
+x.shadowColor='rgb('+rgb+')';x.shadowBlur=16*n.a;x.fillStyle='rgba('+rgb+','+(.45+.55*n.a)+')';
+x.beginPath();x.arc(n.x,n.y,7,0,6.2832);x.fill();});});
+x.shadowBlur=0;x.fillStyle='rgba('+rgb+',.8)';x.font='13px Literata,Georgia,serif';x.textAlign='center';
+nodes.forEach(function(layer,l){x.fillText(NAMES[l],layer[0].x,h*.8+34);});
+x.textAlign='left';x.fillText(mode,nodes[0][0].x-5,h*.16-26);}
+function loop(){t++;if(t%170===1)fire((((t/170)|0)%3)===2);
+pulses.forEach(function(p){p.s+=.03;if(p.s>=1&&!p.done){p.done=1;var n=p.back?p.e.a:p.e.b;n.a=Math.min(1,n.a+.5);}});
+pulses=pulses.filter(function(p){return p.s<1.05;});
+nodes.forEach(function(l){l.forEach(function(n){n.a*=.96;});});
+draw();requestAnimationFrame(loop);}
+addEventListener('surge',function(e){fire(e.detail<0);});
+addEventListener('resize',size);size();if(!reduce)loop();
+})();
+</script>
+</body>
+</html>
